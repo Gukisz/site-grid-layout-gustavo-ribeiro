@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - FijuStreet</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="favicon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <h1>Fiju<span>Street</span></h1>
+            <p>streetwear culture</p>
+        </div>
+        
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="index.html">Home</a></li>
+                <li class="cabecalho__item"><a href="novidades.html">Novidades</a></li>
+                <li class="cabecalho__item"><a href="masculino.html">Masculino</a></li>
+                <li class="cabecalho__item"><a href="feminino.html">Feminino</a></li>
+                <li class="cabecalho__item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <div class="cabecalho__icones">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+            <a href="#"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+    </header>
+    
+    <main class="principal contato">
+        <section class="contato__informacoes">
+            <h2>FALE CONOSCO</h2>
+            <p>Tem dúvidas, sugestões ou reclamações? Entre em contato conosco!</p>
+            
+            <div class="contato__detalhes">
+                <div class="contato__item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>E-mail</h3>
+                    <p>contato@fijustreet.com</p>
+                </div>
+                
+                <div class="contato__item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p>(11) 9999-9999</p>
+                </div>
+                
+                <div class="contato__item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Endereço</h3>
+                    <p>Rua Streetwear, 123 - São Paulo/SP</p>
+                </div>
+                
+                <div class="contato__item">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário</h3>
+                    <p>Segunda a Sexta: 9h às 18h</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="contato__formulario">
+            <h2>ENVIE UMA MENSAGEM</h2>
+            <form>
+                <div class="form__grupo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" required>
+                </div>
+                
+                <div class="form__grupo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                
+                <div class="form__grupo">
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" required>
+                </div>
+                
+                <div class="form__grupo">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="botao botao--grande">ENVIAR MENSAGEM</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer class="rodape">
+        <div class="rodape__colunas">
+            <div class="rodape__coluna">
+                <h3>FijuStreet</h3>
+                <p>Streetwear autêntico para quem vive a cultura urbana.</p>
+                <div class="rodape__redes-sociais">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="rodape__coluna">
+                <h3>LINKS ÚTEIS</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Trocas e devoluções</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                </ul>
+            </div>
+            
+            <div class="rodape__coluna">
+                <h3>ATENDIMENTO</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@fijustreet.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> São Paulo - SP</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="rodape__copyright">
+            <p>&copy; 2025 FijuStreet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

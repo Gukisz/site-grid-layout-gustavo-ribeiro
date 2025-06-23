@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil - FijuStreet</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="favicon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <h1>Fiju<span>Street</span></h1>
+            <p>streetwear culture</p>
+        </div>
+        
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="index.html">Home</a></li>
+                <li class="cabecalho__item"><a href="novidades.html">Novidades</a></li>
+                <li class="cabecalho__item"><a href="masculino.html">Masculino</a></li>
+                <li class="cabecalho__item"><a href="feminino.html">Feminino</a></li>
+                <li class="cabecalho__item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <div class="cabecalho__icones">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="perfil.html" class="ativo"><i class="fas fa-user"></i></a>
+            <a href="carrinho.html"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+    </header>
+    
+    <main class="principal perfil">
+        <h1 class="perfil__titulo">MEU PERFIL</h1>
+        
+        <div class="perfil__conteudo">
+            <aside class="perfil__menu">
+                <div class="perfil__usuario">
+                    <div class="perfil__avatar">
+                        <img src="assets/images/avatar.jpg" alt="Avatar do usuário">
+                    </div>
+                    <h3>Carlos Silva</h3>
+                    <p>Membro desde: 15/03/2022</p>
+                </div>
+                
+                <nav class="perfil__navegacao">
+                    <ul>
+                        <li class="ativo"><a href="#"><i class="fas fa-user"></i> Meus dados</a></li>
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Endereços</a></li>
+                        <li><a href="#"><i class="fas fa-shopping-bag"></i> Meus pedidos</a></li>
+                        <li><a href="#"><i class="fas fa-heart"></i> Favoritos</a></li>
+                        <li><a href="#"><i class="fas fa-lock"></i> Alterar senha</a></li>
+                        <li><a href="#"><i class="fas fa-sign-out-alt"></i> Sair</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <section class="perfil__dados">
+                <h2>MEUS DADOS</h2>
+                <form class="perfil__formulario">
+                    <div class="form__grupo">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" value="Carlos Silva">
+                    </div>
+                    
+                    <div class="form__grupo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" value="carlos.silva@email.com">
+                    </div>
+                    
+                    <div class="form__grupo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" id="cpf" value="123.456.789-00" disabled>
+                    </div>
+                    
+                    <div class="form__grupo-duplo">
+                        <div class="form__grupo">
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="date" id="nascimento" value="1990-05-15">
+                        </div>
+                        
+                        <div class="form__grupo">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" value="(11) 99999-9999">
+                        </div>
+                    </div>
+                    
+                    <div class="form__grupo">
+                        <label for="genero">Gênero</label>
+                        <select id="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao-informar">Prefiro não informar</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="botao">SALVAR ALTERAÇÕES</button>
+                </form>
+                
+                <div class="perfil__pedidos-recentes">
+                    <h3>PEDIDOS RECENTES</h3>
+                    <div class="pedido">
+                        <div class="pedido__cabecalho">
+                            <span>Pedido #12345</span>
+                            <span>15/10/2023</span>
+                            <span>R$ 349,90</span>
+                            <span class="status entregue">Entregue</span>
+                        </div>
+                        <div class="pedido__produtos">
+                            <img src="assets/images/camiseta-m1.jpg" alt="Camiseta Oversized">
+                            <img src="assets/images/bone.jpg" alt="Boné Snapback">
+                        </div>
+                    </div>
+                    
+                    <div class="pedido">
+                        <div class="pedido__cabecalho">
+                            <span>Pedido #12344</span>
+                            <span>01/10/2023</span>
+                            <span>R$ 199,90</span>
+                            <span class="status cancelado">Cancelado</span>
+                        </div>
+                        <div class="pedido__produtos">
+                            <img src="assets/images/calca-m.jpg" alt="Calça Cargo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <div class="rodape__colunas">
+            <div class="rodape__coluna">
+                <h3>FijuStreet</h3>
+                <p>Streetwear autêntico para quem vive a cultura urbana.</p>
+                <div class="rodape__redes-sociais">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="rodape__coluna">
+                <h3>LINKS ÚTEIS</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Trocas e devoluções</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                </ul>
+            </div>
+            
+            <div class="rodape__coluna">
+                <h3>ATENDIMENTO</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@fijustreet.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> São Paulo - SP</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="rodape__copyright">
+            <p>&copy; 2025 FijuStreet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

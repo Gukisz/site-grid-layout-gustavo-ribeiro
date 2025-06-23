@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho - FijuStreet</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="favicon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__logo">
+            <h1>Fiju<span>Street</span></h1>
+            <p>streetwear culture</p>
+        </div>
+        
+        <nav class="cabecalho__navegacao">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="index.html">Home</a></li>
+                <li class="cabecalho__item"><a href="novidades.html">Novidades</a></li>
+                <li class="cabecalho__item"><a href="masculino.html">Masculino</a></li>
+                <li class="cabecalho__item"><a href="feminino.html">Feminino</a></li>
+                <li class="cabecalho__item"><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+        
+        <div class="cabecalho__icones">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="perfil.html"><i class="fas fa-user"></i></a>
+            <a href="carrinho.html" class="ativo"><i class="fas fa-shopping-bag"></i></a>
+        </div>
+    </header>
+    
+    <main class="principal carrinho">
+        <h1 class="carrinho__titulo">SEU CARRINHO</h1>
+        
+        <div class="carrinho__conteudo">
+            <section class="carrinho__itens">
+                <div class="carrinho__item">
+                    <img src="assets/images/camiseta-m1.jpg" alt="Camiseta Oversized" class="carrinho__item-imagem">
+                    <div class="carrinho__item-detalhes">
+                        <h3>Camiseta Oversized</h3>
+                        <p>Tamanho: G</p>
+                        <p>Cor: Preto</p>
+                        <div class="carrinho__item-quantidade">
+                            <button class="quantidade-btn">-</button>
+                            <span>1</span>
+                            <button class="quantidade-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="carrinho__item-preco">
+                        <p>R$ 129,90</p>
+                        <button class="remover-item"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                
+                <div class="carrinho__item">
+                    <img src="assets/images/calca-m.jpg" alt="Calça Cargo" class="carrinho__item-imagem">
+                    <div class="carrinho__item-detalhes">
+                        <h3>Calça Cargo</h3>
+                        <p>Tamanho: M</p>
+                        <p>Cor: Bege</p>
+                        <div class="carrinho__item-quantidade">
+                            <button class="quantidade-btn">-</button>
+                            <span>2</span>
+                            <button class="quantidade-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="carrinho__item-preco">
+                        <p>R$ 319,80</p>
+                        <button class="remover-item"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+                
+                <div class="carrinho__item">
+                    <img src="assets/images/tenis.jpg" alt="Tênis Skate" class="carrinho__item-imagem">
+                    <div class="carrinho__item-detalhes">
+                        <h3>Tênis Skate</h3>
+                        <p>Tamanho: 42</p>
+                        <p>Cor: Branco</p>
+                        <div class="carrinho__item-quantidade">
+                            <button class="quantidade-btn">-</button>
+                            <span>1</span>
+                            <button class="quantidade-btn">+</button>
+                        </div>
+                    </div>
+                    <div class="carrinho__item-preco">
+                        <p>R$ 399,90</p>
+                        <button class="remover-item"><i class="fas fa-trash"></i></button>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="carrinho__resumo">
+                <h3>RESUMO DO PEDIDO</h3>
+                <div class="resumo__linha">
+                    <span>Subtotal</span>
+                    <span>R$ 849,60</span>
+                </div>
+                <div class="resumo__linha">
+                    <span>Frete</span>
+                    <span>R$ 19,90</span>
+                </div>
+                <div class="resumo__linha total">
+                    <span>Total</span>
+                    <span>R$ 869,50</span>
+                </div>
+                <a href="#" class="botao botao--grande">FINALIZAR COMPRA</a>
+                <a href="index.html" class="continuar-comprando">Continuar comprando</a>
+                
+                <div class="cupom">
+                    <h4>APLICAR CUPOM</h4>
+                    <div class="cupom__input">
+                        <input type="text" placeholder="Código do cupom">
+                        <button>APLICAR</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </main>
+    
+    <footer class="rodape">
+        <div class="rodape__colunas">
+            <div class="rodape__coluna">
+                <h3>FijuStreet</h3>
+                <p>Streetwear autêntico para quem vive a cultura urbana.</p>
+                <div class="rodape__redes-sociais">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            
+            <div class="rodape__coluna">
+                <h3>LINKS ÚTEIS</h3>
+                <ul>
+                    <li><a href="#">Sobre nós</a></li>
+                    <li><a href="#">Trocas e devoluções</a></li>
+                    <li><a href="#">Política de privacidade</a></li>
+                    <li><a href="#">Termos de serviço</a></li>
+                </ul>
+            </div>
+            
+            <div class="rodape__coluna">
+                <h3>ATENDIMENTO</h3>
+                <ul>
+                    <li><i class="fas fa-envelope"></i> contato@fijustreet.com</li>
+                    <li><i class="fas fa-phone"></i> (11) 9999-9999</li>
+                    <li><i class="fas fa-map-marker-alt"></i> São Paulo - SP</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="rodape__copyright">
+            <p>&copy; 2025 FijuStreet. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
